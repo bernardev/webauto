@@ -1,0 +1,1131 @@
+p {
+  color: #fff;
+}
+
+/* Home Container */
+.home-container {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Logo container with red bar */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper {
+  position: relative;
+}
+
+.logo {
+  height: 120px;
+}
+
+/* Menu Styling */
+.menu-list {
+  display: flex;
+  justify-content: space-around; /* Distribui os itens igualmente */
+  align-items: center;
+  gap: 40px; /* Aumenta o espaço entre os itens */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Links de Navegação */
+.menu-list li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #201f1f;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Hover com Efeito e Animação */
+.menu-list li a:hover {
+  color: #fe171f;
+  transform: translateY(-3px);
+}
+
+/* Adiciona Ícones para Estilo */
+.menu-list li a::before {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: #fe171f;
+  transition: width 0.4s ease;
+  margin-top: 5px;
+  opacity: 0;
+}
+
+/* Linha Aparecendo ao Hover */
+.menu-list li a:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+
+/* Header Icons - Ícones do Header */
+.header-icons {
+  display: flex;
+  gap: 30px; /* Aumenta a distância entre os ícones */
+}
+
+.icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  color: #201f1f;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.icon-link:hover {
+  color: #fe171f;
+  transform: translateY(-3px);
+}
+
+/* Ícones Individualmente */
+.header-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+/* Menu Toggle para Mobile */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Banner Section */
+.banner {
+  background-color: #e0e0e0;
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.search-bar-container {
+  width: 80%;
+  max-width: 1200px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-options {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.search-options button {
+  background-color: white;
+  border: 1px solid #fe171f;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #201f1f;
+  transition: background 0.3s ease;
+}
+
+.search-options .active-option {
+  background-color: #fe171f;
+  color: white;
+}
+
+.search-input-wrapper {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+}
+
+.search-input {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 10px 15px;
+  background-color: white;
+}
+
+.search-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+.search-button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.search-button:hover {
+  color: #fe171f;
+}
+
+.search-categories {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.search-categories button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #888;
+  cursor: pointer;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.search-categories .active-category {
+  color: black;
+  font-weight: 700;
+  position: relative;
+}
+
+.search-categories .active-category::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fe171f;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.search-categories button:hover {
+  color: black;
+}
+
+.offer-button {
+  background-color: #fe171f;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.offer-button:hover {
+  background-color: #e01414;
+}
+
+/* Slider de Veículos */
+.vehicle-slider {
+  padding: 60px 0; /* Aumentei o padding para mais respiro */
+  text-align: center;
+}
+
+.vehicle-slider h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #e01414;
+}
+
+.vehicle-slider p {
+  color: #000;
+  margin-bottom: 30px;
+}
+
+/* Card do Veículo */
+.vehicle-card {
+  padding: 20px; /* Aumentado o padding interno */
+  margin: 10px; /* Adicionado margem externa para espaçamento entre os cards */
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.vehicle-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem do Veículo */
+.vehicle-card img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Informações do Veículo */
+.vehicle-info h3 {
+  margin-top: 10px;
+  color: #201f1f;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.vehicle-info p {
+  color: #000;
+}
+
+/* Ajustes nos Slides */
+.slick-slide {
+  padding: 10px; /* Espaçamento entre os slides */
+}
+
+.slick-slide img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 0 auto; /* Centraliza a imagem */
+}
+
+/* Customizando os Dots */
+.slick-dots {
+  bottom: -15px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #fe171f !important;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+}
+
+
+/* Slider de Marcas */
+.brand-slider {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.brand-slider h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #201f1f;
+}
+
+/* Container de cada marca */
+.brand-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 150px; /* Ajuste conforme necessário */
+}
+
+/* Estilização das imagens das marcas */
+.brand-card img {
+  max-width: 100px; /* Ajuste o tamanho máximo da largura */
+  max-height: 100%; /* Garante que a imagem não ultrapasse o espaço */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Efeito de zoom ao passar o mouse */
+.brand-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Slider ajustado para centralização */
+.slick-slide .brand-card {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Seção Quem Somos */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #f5f5f5, #ffffff);
+  box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+/* Imagem com efeito de escala */
+.about-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+  width: 550px;
+  height: 300px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto sofisticado */
+.about-text {
+  max-width: 600px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #201f1f;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.about-text h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fe171f;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: left !important;
+}
+
+.learn-more-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fe171f;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.learn-more-button:hover {
+  background-color: #e01414;
+  transform: translateY(-3px);
+}
+
+.learn-more-button svg {
+  font-size: 1.2rem;
+}
+
+/* Seção de Categorias */
+.categories-section {
+  padding: 60px 0; /* Aumentado para dar mais respiro */
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.categories-section h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #201f1f;
+}
+
+.categories-container {
+  display: flex;
+  justify-content: space-evenly; /* Garante maior espaço entre os cards */
+  gap: 40px; /* Maior espaçamento entre os cards */
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto; /* Centraliza a seção na tela */
+}
+
+.category-card {
+  width: 250px; /* Cards maiores para preencher mais espaço */
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category-info {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Seção de filtro de veículos custo benefício/qualidade de preços */
+/* Seção de filtro de veículos custo benefício/qualidade de preços */
+.vehicle-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f0f0f0, #ffffff);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #201f1f;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.header-decoration {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+  margin-top: 35px;
+}
+
+/* Listras Diagonais */
+.red-stripe {
+  width: 500px;
+  height: 30px;
+  background-color: #fe171f;
+  transform: skewX(-20deg);
+}
+
+.black-stripe {
+  width: 1000px;
+  height: 30px;
+  background-color: black;
+  transform: skewX(-20deg);
+  margin-left: -20px;
+}
+
+.black-stripe2 {
+  width: 350px;
+  height: 10px;
+  background-color: black;
+  transform: skewX(-30deg);
+  margin-left: -200px;
+  margin-top: -30px;
+}
+
+/* Grid de Veículos */
+.vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  padding: 0 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Card Individual de Veículos */
+.vehicle-card {
+  position: relative;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão de Descrição no Canto Superior Direito */
+.vehicle-description-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fe171f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2; /* Garante que o botão fique por cima da imagem */
+}
+
+.vehicle-description-btn:hover {
+  background: #e01414;
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Ícone dentro do botão */
+.vehicle-description-btn svg {
+  font-size: 1.1rem;
+}
+
+/* Imagem do Veículo */
+.vehicle-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+/* Informações do Veículo */
+.vehicle-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.vehicle-brand {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.vehicle-model {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #201f1f;
+}
+
+
+/* Botão Ver Mais */
+.see-more-btn {
+  margin-top: 50px;
+  background-color: #fe171f;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.see-more-btn:hover {
+  background-color: #e01414;
+  transform: translateY(-5px);
+}
+
+/* Fundo com Efeito de Partículas */
+.vehicle-section::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.1;
+  z-index: 0;
+  animation: moveParticles 10s linear infinite;
+}
+
+/* Seção de Filtro */
+.filter-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+/* Botão de Filtro Moderno */
+.filter-btn {
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  border: 2px solid transparent;
+  color: #201f1f;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Texto em Camada Superior */
+.filter-btn span {
+  position: relative;
+  z-index: 2; /* Garante que o texto esteja sempre acima do gradiente */
+}
+
+/* Efeito Hover Dinâmico */
+.filter-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #fe171f, #e01414);
+  transition: all 0.7s ease;
+}
+
+.filter-btn:hover::before {
+  left: 0;
+}
+
+.filter-btn:hover {
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão de Filtro Ativo */
+.filter-btn.active {
+  background: linear-gradient(to right, #fe171f, #e01414);
+  color: white;
+  border: 2px solid #e01414;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Animação Suave */
+@keyframes buttonPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Efeito de Pulso ao Ativar */
+.filter-btn.active {
+  animation: buttonPulse 1.5s infinite;
+}
+
+
+/* Ajustes na Grid de Veículos */
+.vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  padding: 0 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.vehicle-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção de Serviços */
+.services-section {
+  padding: 80px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.services-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #201f1f;
+  margin-bottom: 10px;
+}
+
+.services-header p {
+  font-size: 1.2rem;
+  color: #fe171f;
+  margin-bottom: 50px;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.service-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.vehicle-section::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.1;
+  animation: moveParticles 10s linear infinite;
+}
+
+/* Footer */
+.footer {
+  background-color: #fff;
+  color: #111;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+/* Logo */
+.footer-logo img {
+  max-width: 250px;
+}
+
+/* Links Rápidos */
+.footer-links h3, .footer-contact h3, .footer-social h3, .footer-newsletter h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #111;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #111;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fe171f;
+}
+
+/* Contato */
+.footer-contact p {
+  margin: 5px 0;
+  color: #111;
+}
+
+/* Redes Sociais */
+.footer-social .social-icons a {
+  font-size: 1.8rem;
+  margin: 0 10px;
+  color: #111;
+  transition: color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+  color: #fe171f;
+}
+
+form {
+  width: 550px;
+}
+
+/* Newsletter */
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.newsletter-form button {
+  background-color: #fe171f;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #e01414;
+}
+
+/* Parte Inferior */
+.footer-bottom {
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+}
+
+
+/* Animação para Efeito de Partículas */
+@keyframes moveParticles {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-10px, -10px);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .vehicle-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 30px;
+  }
+
+  .vehicle-card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vehicle-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vehicle-card img {
+    height: 150px;
+  }
+
+  .see-more-btn {
+    width: 100%;
+  }
+}
+
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 300px;
+  }
+
+  .about-text {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+
+
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .menu-list {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

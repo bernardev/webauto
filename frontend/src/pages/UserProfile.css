@@ -1,0 +1,141 @@
+/* src/pages/UserProfile.css */
+
+.profile-container {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f8fc;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-avatar {
+    width: 60px;
+    height: 60px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .profile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .profile-nav ul li {
+    padding: 10px 0;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .profile-nav ul li.active {
+    color: #fe171f;
+    font-weight: bold;
+  }
+  
+  .profile-main {
+    flex: 1;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-main h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .profile-sections {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .profile-info, .profile-contact {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .profile-info h2, .profile-contact h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #fe171f;
+  }
+  
+  form label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 15px;
+    display: block;
+  }
+  
+  form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .address-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .phone-option {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .phone-option label {
+    margin-left: 5px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .disclaimer {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 10px;
+  }
+  
+  .save-button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #fe171f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    align-self: flex-end;
+  }
+  
+  .save-button:hover {
+    background-color: #e01414;
+  }
+  

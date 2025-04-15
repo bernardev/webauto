@@ -1,0 +1,292 @@
+.vehicle-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: 20px auto;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .vehicle-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .vehicle-detail-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .vehicle-detail-price {
+    font-size: 2rem;
+    color: #fe171f;
+    font-weight: bold;
+  }
+  
+  .vehicle-detail-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .vehicle-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .thumbnail-images {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .vehicle-info, .seller-contact {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vehicle-info h2, .seller-contact h2 {
+    font-size: 1.5rem;
+    color: #fe171f;
+    margin-bottom: 15px;
+  }
+  
+  .vehicle-info ul, .seller-contact p {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .vehicle-info li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .vehicle-info li svg, .seller-contact p svg {
+    margin-right: 8px;
+  }
+  
+  .seller-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+  }
+  
+  .btn.visit {
+    background-color: #fe171f;
+    color: white;
+  }
+  
+  .btn.contact {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+
+  .vehicle-specifications {
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .specification-section {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .specification-section h2 {
+    font-size: 1.5rem;
+    color: #fe171f;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .specification-section h2 svg {
+    margin-right: 8px;
+  }
+  
+  .specification-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .specification-list li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  .specification-list li svg {
+    color: #fe171f;
+    margin-right: 8px;
+  }
+
+  .vehicle-observations {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.vehicle-observations h2 {
+    font-size: 1.5rem;
+    color: #fe171f;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.vehicle-observations h2 svg {
+    margin-right: 8px;
+}
+
+.vehicle-observations ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #111;
+}
+
+.vehicle-observations li {
+    margin: 8px 0;
+}
+
+.vehicle-financing {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 70%;
+}
+
+.vehicle-financing h2 {
+    font-size: 1.8rem;
+    color: #fe171f;
+    margin-bottom: 10px;
+}
+
+.financing-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.financing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.financing-input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.financing-input-group label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.financing-input-group input,
+.financing-input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.edit-icon {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.financing-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.financing-checkbox input {
+    margin-right: 10px;
+}
+
+.financing-disclaimer {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.btn.financing-submit {
+    background-color: #fe171f;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.btn.financing-submit:hover {
+    opacity: 0.9;
+}
+
+  

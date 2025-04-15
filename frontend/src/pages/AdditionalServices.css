@@ -1,0 +1,119 @@
+/* src/pages/AdditionalServices.css */
+
+.additional-services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 40px auto;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .additional-services-content {
+    max-width: 1200px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .additional-services-content h1 {
+    font-size: 2.5rem;
+    color: #fe171f;
+    margin-bottom: 30px;
+  }
+  
+  .additional-services-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 50px;
+    line-height: 1.6;
+  }
+  
+  .services-grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .service-card2 {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-icon2 {
+    font-size: 2.5rem;
+    color: #fe171f;
+    margin-bottom: 15px;
+  }
+  
+  .service-card2 h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+  
+  .service-card2 p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .service-button2 {
+    background-color: #fe171f;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .service-button2:hover {
+    background-color: #e01416;
+  }
+  
+  .contact-section {
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .contact-section h3 {
+    font-size: 1.8rem;
+    color: #fe171f;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .contact-button {
+    background-color: #fe171f;
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #e01416;
+  }
+  

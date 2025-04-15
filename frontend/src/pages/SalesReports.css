@@ -1,0 +1,27 @@
+/* src/pages/SalesReports.css */
+
+.sales-reports {
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+  
+  .sales-reports h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .chart-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-container canvas {
+    max-height: 400px;
+  }
+  

@@ -1,0 +1,178 @@
+/* Página de ajuda com estilo moderno */
+
+.help-center-page {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Banner */
+  .help-banner {
+    background: linear-gradient(to right, #fe171f, #ff6363);
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .help-banner::before {
+    content: "";
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .help-banner h1 {
+    font-size: 2.5rem;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .help-banner p {
+    z-index: 1;
+    font-size: 1.2rem;
+  }
+  
+  .search-bar {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px;
+}
+
+.search-bar input {
+    width: 60%; /* Ajuste o tamanho conforme necessário */
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+  
+  /* Categorias */
+  .categories-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .categories-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .categories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .category-card {
+    background: #fff;
+    width: 220px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .category-icon {
+    font-size: 3rem;
+    color: #fe171f;
+    margin-bottom: 15px;
+  }
+  
+  .category-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .category-card p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Perguntas Frequentes */
+  .faq-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .faq-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .faq-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    font-size: 1rem;
+    color: #fe171f;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .faq-item:hover {
+    color: #ff6363;
+  }
+  
+  /* Formulário de Contato */
+  .contact-form-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .contact-form-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  .submit-btn {
+    background-color: #fe171f;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #d2161c;
+  }
+  

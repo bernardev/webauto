@@ -1,0 +1,50 @@
+/* src/pages/ManageFinancingAndServices.css */
+
+.manage-financing-and-services {
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  
+  th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f5f5f5;
+    color: #555;
+  }
+  
+  tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .approve-button, .reject-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    margin-right: 5px;
+  }
+  
+  .approve-button {
+    background-color: #4CAF50;
+  }
+  
+  .reject-button {
+    background-color: #d9534f;
+  }
+  

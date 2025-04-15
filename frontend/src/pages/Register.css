@@ -1,0 +1,187 @@
+/* Register.css */
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #201f1f;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.register-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.register-box:hover {
+  transform: scale(1.02);
+}
+
+.logo-container {
+  margin-bottom: 25px;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+}
+
+.register-content {
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+  width: 100%;
+  max-width: 900px;
+}
+
+/*.input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 12px 16px;
+  background-color: #f5f5f5;
+  transition: box-shadow 0.3s;
+}*/
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  transition: box-shadow 0.3s;
+}
+
+.input-container input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding-left: 10px;
+  background-color: transparent;
+}
+
+.input-container:focus-within {
+  box-shadow: 0 0 10px #fe171f;
+}
+
+.toggle-password {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.toggle-password:hover {
+  color: #fe171f;
+}
+
+.social-button {
+  width: 100%;
+  max-width: 350px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.facebook {
+  background-color: #3b5998;
+  color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.facebook svg {
+  color: white !important;
+}
+
+.google {
+  background-color: white;
+  color: #fe171f;
+  border: 2px solid #fe171f;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.google:hover {
+  background-color: #fe171f;
+  color: white;
+}
+
+.apple {
+  background-color: black;
+  color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.apple svg {
+  color: white !important;
+}
+
+.email-section button {
+  background: linear-gradient(45deg, #fe171f, #ff4a4a);
+  color: white;
+  border: none;
+  width: 100%;
+  max-width: 350px;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+
+.email-section button:hover {
+  background: linear-gradient(45deg, #ff4a4a, #fe171f);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0%;
+  font-weight: bold;
+  color: #777;
+  margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #ddd;
+  margin: 0 10px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer a {
+  color: #fe171f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

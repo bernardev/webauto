@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/webauto/frontend/static/css/main.b019cf5c.css",
+    "main.js": "/webauto/frontend/static/js/main.a5a15f0f.js",
+    "static/js/453.5b007334.chunk.js": "/webauto/frontend/static/js/453.5b007334.chunk.js",
+    "static/media/banner-trucks.jpg": "/webauto/frontend/static/media/banner-trucks.0ec0197a58b140372761.jpg",
+    "static/media/modelocaminhao1 (2).jpg": "/webauto/frontend/static/media/modelocaminhao1 (2).0ec0197a58b140372761.jpg",
+    "static/media/vw_logo.png": "/webauto/frontend/static/media/vw_logo.7031826e703030db6c9d.png",
+    "static/media/volvo_logo.png": "/webauto/frontend/static/media/volvo_logo.34601b3f8020c6edd57a.png",
+    "static/media/modelocaminhao1.jpg": "/webauto/frontend/static/media/modelocaminhao1.ea1e78ee0fa18f2f60e7.jpg",
+    "static/media/modelocaminhao3.jpg": "/webauto/frontend/static/media/modelocaminhao3.782e11f6250b85c26d6e.jpg",
+    "static/media/modelocaminhao4.jpg": "/webauto/frontend/static/media/modelocaminhao4.75d9f2903b1180da66ef.jpg",
+    "static/media/modelocaminhao5.jpg": "/webauto/frontend/static/media/modelocaminhao5.7e0875a01382703e154d.jpg",
+    "static/media/scania_logo.png": "/webauto/frontend/static/media/scania_logo.52ecba4e8b0006e905e6.png",
+    "static/media/mercedes_logo.png": "/webauto/frontend/static/media/mercedes_logo.aacf335af7b7b931982f.png",
+    "static/media/modelocaminhao2.jpg": "/webauto/frontend/static/media/modelocaminhao2.8940304812c452322583.jpg",
+    "static/media/about.jpeg": "/webauto/frontend/static/media/about.8be2bdc83b6bc4f94e0b.jpeg",
+    "static/media/logo.jpeg": "/webauto/frontend/static/media/logo.8be2bdc83b6bc4f94e0b.jpeg",
+    "static/media/iveco_logo.png": "/webauto/frontend/static/media/iveco_logo.d6b9e40e9fddf5ef23ec.png",
+    "static/media/nissan.png": "/webauto/frontend/static/media/nissan.d613832caf94db0da247.png",
+    "static/media/volkswagen.png": "/webauto/frontend/static/media/volkswagen.b4301ffd25b1462fd81c.png",
+    "static/media/honda.png": "/webauto/frontend/static/media/honda.77d11d10606ec62883c9.png",
+    "static/media/toyota.png": "/webauto/frontend/static/media/toyota.c13f691faac6cb649b22.png",
+    "static/media/hyundai.png": "/webauto/frontend/static/media/hyundai.05b04d364ca953ffc8bd.png",
+    "static/media/default-profile.png": "/webauto/frontend/static/media/default-profile.cb69260fa72af937b4a5.png",
+    "static/media/chevrolet.png": "/webauto/frontend/static/media/chevrolet.fef68adaaacb3fd4bc97.png",
+    "static/media/bmw.webp": "/webauto/frontend/static/media/bmw.aa5b0baf913304f03a7a.webp",
+    "static/media/ford.png": "/webauto/frontend/static/media/ford.55a4020806fbe84d16fe.png",
+    "static/media/renault.webp": "/webauto/frontend/static/media/renault.38f8aa0f6abacded11ea.webp",
+    "static/media/slick.svg": "/webauto/frontend/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/webauto/frontend/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/webauto/frontend/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/webauto/frontend/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/webauto/frontend/index.html",
+    "main.b019cf5c.css.map": "/webauto/frontend/static/css/main.b019cf5c.css.map",
+    "main.a5a15f0f.js.map": "/webauto/frontend/static/js/main.a5a15f0f.js.map",
+    "453.5b007334.chunk.js.map": "/webauto/frontend/static/js/453.5b007334.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b019cf5c.css",
+    "static/js/main.a5a15f0f.js"
+  ]
+}

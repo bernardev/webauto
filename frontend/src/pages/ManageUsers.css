@@ -1,0 +1,105 @@
+/* src/pages/ManageUsers.css */
+
+.manage-users {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .manage-users h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .filter-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .filter-section label {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .filter-section select {
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .users-table th, .users-table td {
+    padding: 12px 15px;
+    text-align: left;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .users-table th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .users-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .users-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .edit-button, .delete-button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    color: #fff;
+  }
+  
+  .edit-button {
+    background-color: #4caf50;
+  }
+  
+  .delete-button {
+    background-color: #e74c3c;
+  }
+  
+  .edit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b;
+  }
+  
+  @media (max-width: 768px) {
+    .filter-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .filter-section label, .filter-section select {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .users-table th, .users-table td {
+      padding: 8px;
+    }
+  }
+  
